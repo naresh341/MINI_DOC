@@ -30,7 +30,7 @@ const Foreground = () => {
    <div ref={ref}  className='w-full h-screen  fixed z-3 left-0 top-0 flex gap-10 p-5 flex-wrap'>
 
   {data.map((item,index)=>(
-    <Cards data={item} reference={ref}/>
+    <Cards key={index} data={item} reference={ref}/>
   ))}
 
 
