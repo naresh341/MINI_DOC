@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::selection{
+    color: rgb(233, 75, 18);
+    caret-color: transparent;
+
+}
+
+
