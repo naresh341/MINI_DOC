@@ -77,13 +77,13 @@ const Foreground = () => {
 
     
         <motion.div
-          className="relative w-60 h-80 bg-zinc-700/50 rounded-[45px] caret-transparent shadow-md  flex items-center justify-center cursor-pointer"
+          className="relative lg:w-60 lg:h-80 flex-wrap lg:bg-zinc-700/50 rounded-[45px] caret-transparent p-10 shadow-md  flex items-center justify-center cursor-pointer"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           onClick={() => setIsAddingCard(true)}
         >
-          <span className="text-5xl text-gray-500"><IoMdAddCircleOutline size="6rem"  /></span>
+          <span className="text-5xl text-gray-500"><IoMdAddCircleOutline lg:size="6rem" size="3rem"  /></span>
         </motion.div>
       </div>
 

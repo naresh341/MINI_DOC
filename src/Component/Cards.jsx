@@ -19,7 +19,7 @@ const Cards = ({ data, reference, onNoteChange, onDelete,onDownload }) => {
       drag
       dragConstraints={reference}
       whileDrag={{ scale: 1.1 }}
-      className="w-60 flex-shrink-0 h-80 bg-zinc-700/50 rounded-[45px] text-white py-10 px-6 relative overflow-hidden"
+      className="lg:w-60 flex-shrink-0 lg:h-80 h-56 bg-zinc-700/50 rounded-[45px] text-white py-10 lg:px-6 px-3 relative flex-wrap overflow-hidden"
     >
       <LuFileText size={24} />
 
@@ -36,7 +36,7 @@ const Cards = ({ data, reference, onNoteChange, onDelete,onDownload }) => {
       </div>
 
       <div className="w-full absolute bottom-0 left-[10rem]">
-        <div className="flex justify-between items-center py-3 px-8 mb-3">
+        <div className="flex justify-between items-center py-3 px-8 lg:mb-3">
           <span
             className="w-5 h-5 flex items-center justify-center bg-zinc-200 rounded-full cursor-pointer"
             onClick={onDownload}
